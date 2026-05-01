@@ -17,7 +17,7 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav__cta">Contact</a></li>
     </ul>
     <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -49,74 +49,91 @@
   <!-- PROJECTS -->
   <section class="section" id="projects">
     <div class="container">
-      <h2 class="section__title fade-in">Projects</h2>
+      <h2 class="section__title fade-in">Featured Projects</h2>
       <div class="projects__grid">
 
         <article class="project-card fade-in">
-          <div class="project-card__header">
+          <div class="project-card__image" style="background: linear-gradient(135deg, #00d4ff 0%, #0a7c5c 100%)">
+            <div class="project-card__overlay">
+              <a href="https://github.com/khalludi03/Ayojon" target="_blank" rel="noopener" class="project-card__action">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Full-Stack · Marketplace</span>
             <h3>Ayojon E-Commerce</h3>
-            <a href="https://github.com/khalludi03/Ayojon" target="_blank" rel="noopener" class="project-card__link" aria-label="GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <p class="project-card__desc">Full-stack multi-vendor marketplace for event products targeting Bangladesh.</p>
-          <ul class="project-card__points">
-            <li>Vendor storefronts, product management with S3 uploads, hybrid cart sync</li>
-            <li>Multi-step checkout (bKash + COD) with role-based auth</li>
-          </ul>
-          <div class="badges project-card__tech">
-            <span class="badge badge--sm">TypeScript</span>
-            <span class="badge badge--sm">React 19</span>
-            <span class="badge badge--sm">Hono</span>
-            <span class="badge badge--sm">Drizzle ORM</span>
-            <span class="badge badge--sm">PostgreSQL</span>
-            <span class="badge badge--sm">Amazon S3</span>
-            <span class="badge badge--sm">better-auth</span>
+            <p class="project-card__desc">Full-stack multi-vendor marketplace for event products targeting Bangladesh. Features vendor storefronts, S3-backed product management, hybrid cart sync, multi-step checkout with bKash and COD, and role-based auth.</p>
+            <div class="badges project-card__tech">
+              <span class="badge badge--sm">TypeScript</span>
+              <span class="badge badge--sm">React 19</span>
+              <span class="badge badge--sm">Hono</span>
+              <span class="badge badge--sm">Drizzle ORM</span>
+              <span class="badge badge--sm">PostgreSQL</span>
+              <span class="badge badge--sm">Amazon S3</span>
+              <span class="badge badge--sm">better-auth</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/khalludi03/Ayojon" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
           </div>
         </article>
 
         <article class="project-card fade-in">
-          <div class="project-card__header">
+          <div class="project-card__image" style="background: linear-gradient(135deg, #6366f1 0%, #00d4ff 100%)">
+            <div class="project-card__overlay">
+              <a href="https://github.com/khalludi03/Ticket-Processing-Pipeline" target="_blank" rel="noopener" class="project-card__action">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__category">Backend · AI Pipeline</span>
             <h3>AI Support Ticket Pipeline</h3>
-            <a href="https://github.com/khalludi03/Ticket-Processing-Pipeline" target="_blank" rel="noopener" class="project-card__link" aria-label="GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <p class="project-card__desc">Queue-based backend for AI ticket triage and resolution with real-time status updates.</p>
-          <ul class="project-card__points">
-            <li>Two-phase pipeline (triage → resolution) using SQS + DLQ, PostgreSQL state tracking</li>
-            <li>Retry with exponential backoff, schema-validated AI outputs, PII redaction (Pino)</li>
-            <li>Unit + integration tests with Vitest</li>
-          </ul>
-          <div class="badges project-card__tech">
-            <span class="badge badge--sm">TypeScript</span>
-            <span class="badge badge--sm">SQS</span>
-            <span class="badge badge--sm">PostgreSQL</span>
-            <span class="badge badge--sm">WebSockets</span>
-            <span class="badge badge--sm">Zod</span>
-            <span class="badge badge--sm">Vitest</span>
+            <p class="project-card__desc">Queue-based backend for AI ticket triage and resolution with real-time status updates. Two-phase pipeline using SQS and DLQ, schema-validated AI outputs, retry with exponential backoff, and PII redaction.</p>
+            <div class="badges project-card__tech">
+              <span class="badge badge--sm">TypeScript</span>
+              <span class="badge badge--sm">SQS</span>
+              <span class="badge badge--sm">PostgreSQL</span>
+              <span class="badge badge--sm">WebSockets</span>
+              <span class="badge badge--sm">Zod</span>
+              <span class="badge badge--sm">Vitest</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/khalludi03/Ticket-Processing-Pipeline" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
           </div>
         </article>
 
         <article class="project-card fade-in">
-          <div class="project-card__header">
-            <h3>Hospital Management System</h3>
-            <a href="https://github.com/Tanjim605/Hospital_Management_System" target="_blank" rel="noopener" class="project-card__link" aria-label="GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
+          <div class="project-card__image" style="background: linear-gradient(135deg, #f97316 0%, #dc2626 100%)">
+            <div class="project-card__overlay">
+              <a href="https://github.com/Tanjim605/Hospital_Management_System" target="_blank" rel="noopener" class="project-card__action">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
           </div>
-          <p class="project-card__desc">Role-based hospital management system using file-based storage in C++.</p>
-          <ul class="project-card__points">
-            <li>Hierarchical roles and file-based persistence using .txt storage</li>
-            <li>Demonstrates access control and file handling in C++</li>
-          </ul>
-          <div class="badges project-card__tech">
-            <span class="badge badge--sm">C++</span>
-            <span class="badge badge--sm">File I/O</span>
-            <span class="badge badge--sm">RBAC</span>
+          <div class="project-card__body">
+            <span class="project-card__category">Systems · C++</span>
+            <h3>Hospital Management System</h3>
+            <p class="project-card__desc">Role-based hospital management system using file-based storage in C++. Features hierarchical roles, file-based persistence, access control, and demonstrates clean file handling patterns in systems programming.</p>
+            <div class="badges project-card__tech">
+              <span class="badge badge--sm">C++</span>
+              <span class="badge badge--sm">File I/O</span>
+              <span class="badge badge--sm">RBAC</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/Tanjim605/Hospital_Management_System" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
           </div>
         </article>
 
+      </div>
+      <div class="projects__cta fade-in">
+        <a href="https://github.com/khalludi03" target="_blank" rel="noopener" class="btn btn--outline">View All on GitHub →</a>
       </div>
     </div>
   </section>
@@ -351,32 +368,67 @@
   <section class="section section--alt" id="contact">
     <div class="container">
       <h2 class="section__title fade-in">Get In Touch</h2>
-      <p class="contact__tagline fade-in">I'm open to new opportunities, collaborations, and interesting problems.</p>
-      <div class="contact__links fade-in">
-        <a href="mailto:khaledjb03121@gmail.com" class="contact-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          khaledjb03121@gmail.com
-        </a>
-        <a href="https://github.com/khalludi03" target="_blank" rel="noopener" class="contact-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          github.com/khalludi03
-        </a>
-        <a href="https://linkedin.com/in/khalludi03" target="_blank" rel="noopener" class="contact-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          linkedin.com/in/khalludi03
-        </a>
-        <a href="https://codeforces.com/profile/khalludi" target="_blank" rel="noopener" class="contact-link">
-          <img src="https://cdn.simpleicons.org/codeforces/9090a8" width="20" height="20" alt="Codeforces" class="contact-link__logo" />
-          Codeforces
-        </a>
-        <a href="https://atcoder.jp/users/khalludi" target="_blank" rel="noopener" class="contact-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="#9090a8" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 22h4.5L8 18h8l1.5 4H22L12 2zm0 6l3 8H9l3-8z"/></svg>
-          AtCoder
-        </a>
-        <a href="https://www.codechef.com/users/khalludi" target="_blank" rel="noopener" class="contact-link">
-          <img src="https://cdn.simpleicons.org/codechef/9090a8" width="20" height="20" alt="CodeChef" class="contact-link__logo" />
-          CodeChef
-        </a>
+      <div class="contact__grid fade-in">
+
+        <!-- Left: contact info + socials -->
+        <div class="contact__info">
+          <div class="contact__info-items">
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="contact__info-label">Email</p>
+                <a href="mailto:khaledjb03121@gmail.com" class="contact__info-value">khaledjb03121@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="contact__info-label">Location</p>
+                <p class="contact__info-value">Chittagong, Bangladesh</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact__socials-section">
+            <h3>Connect</h3>
+            <div class="contact__socials">
+              <a href="https://github.com/khalludi03" target="_blank" rel="noopener" class="contact__social-icon" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/khalludi03" target="_blank" rel="noopener" class="contact__social-icon" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://codeforces.com/profile/khalludi" target="_blank" rel="noopener" class="contact__social-icon" aria-label="Codeforces">
+                <img src="https://cdn.simpleicons.org/codeforces/9090a8" width="20" height="20" alt="Codeforces" />
+              </a>
+              <a href="https://atcoder.jp/users/khalludi" target="_blank" rel="noopener" class="contact__social-icon" aria-label="AtCoder">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#9090a8"><path d="M12 2L2 22h4.5L8 18h8l1.5 4H22L12 2zm0 6l3 8H9l3-8z"/></svg>
+              </a>
+              <a href="https://www.codechef.com/users/khalludi" target="_blank" rel="noopener" class="contact__social-icon" aria-label="CodeChef">
+                <img src="https://cdn.simpleicons.org/codechef/9090a8" width="20" height="20" alt="CodeChef" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact__form-col">
+          <p class="contact__tagline">I'm open to new opportunities, collaborations, and interesting problems.</p>
+          <!-- Sign up at formspree.io and replace REPLACE_ME with your form ID -->
+          <form class="contact__form" action="https://formspree.io/f/REPLACE_ME" method="POST">
+            <div class="contact__form-row">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <p class="contact__form-status"></p>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
       </div>
     </div>
   </section>
