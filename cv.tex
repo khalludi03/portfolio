@@ -1,0 +1,178 @@
+\documentclass[10pt]{article} % Using standard article class
+\usepackage[left=0.3 in,top=0.3in,right=0.3 in,bottom=0.3in]{geometry} % Document margins
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue]{hyperref} % Makes links blue
+
+% Configure section titles to look like the resume template
+\titleformat{\section}{\vspace{-5pt}\raggedright\Large\bfseries}{}{0em}{}[\titlerule\vspace{-4pt}]
+\titlespacing*{\section}{0pt}{4pt}{4pt}
+
+% Define a custom command for the resume section environment (rSection)
+\newenvironment{rSection}[1]{
+  \section*{#1}
+}{
+  \vspace{-5pt}
+}
+
+% Define a custom command for the header (rSubsection)
+\newcommand{\rSubsection}[4]{
+    \vspace{-1pt}\item[]\begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+        {\bfseries #1} & #2 \\
+        \if\relax\detokenize{#3#4}\relax
+        \else
+            {\itshape #3} & {\itshape #4} \\
+        \fi
+    \end{tabular*}\vspace{-6pt}
+}
+
+\pagestyle{empty} % Remove page numbers
+\setlength{\parindent}{0pt} % Remove paragraph indentation
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%\tHEADER
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+    {\Huge \bfseries Khaled Kashem} \\
+    \vspace{3pt}
+    +880 1848 111 174 $|$ Chittagong, Bangladesh \\
+    \vspace{1pt}
+    \href{mailto:khaledjb03121@gmail.com}{khaledjb03121@gmail.com} $|$
+    \href{https://github.com/khalludi03}{github/khalludi03} $|$
+    \href{https://linkedin.com/in/khalludi03}{linkedin/khalludi03}
+\end{center}
+
+\vspace{6pt}
+
+%----------------------------------------------------------------------------------------
+%\tEDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EDUCATION}
+\vspace{10pt}
+\begin{itemize}[label={}, leftmargin=0pt, itemsep=0pt, parsep=0pt]
+    \item \textbf{Bachelor of Science in Computer Science and Engineering} \hfill June 2021 -- Dec 2025 \\
+          International Islamic University Chittagong \hfill Chittagong, Bangladesh
+\end{itemize}
+\end{rSection}
+
+\vspace{6pt}
+
+%----------------------------------------------------------------------------------------
+%\tTECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{TECHNICAL SKILLS}
+\vspace{10pt}
+
+\begin{itemize}[label=$\bullet$, itemsep=0pt, parsep=0pt, leftmargin=15pt]
+    \item \textbf{Programming Languages:} C, C++, TypeScript / JavaScript, Python
+    \item \textbf{Databases \& ORM:} MySQL, PostgreSQL, SQLite, MongoDB, Drizzle ORM
+    \item \textbf{Frontend:} React, TanStack, Tailwind CSS, HTML, CSS, Jotai, Vite
+    \item \textbf{Backend \& Frameworks:} Node.js, Bun, Django, Hono, Express, REST API
+    \item \textbf{DevOps \& Systems:} Docker, CI/CD, Linux (Ubuntu)
+    \item \textbf{Authentication \& Security:} JWT, Better Auth, Firebase Auth, Role-Based Access Control (RBAC), Zod
+    \item \textbf{Tools \& Version Control:} Git, GitHub, VS Code, ESLint, Prettier, ClickUp
+    \item \textbf{Software Development Practices:} Agile Methodology (Scrum), Software Quality Assurance (SQA)
+    \item \textbf{Competitive Programming:} Solved \textbf{1800+} algorithmic problems; participated in \textbf{400+} contests over the last 4 years $|$ Codeforces: \href{https://codeforces.com/profile/khalludi}{khalludi} (Max. Specialist, 1409) $|$ AtCoder: \href{https://atcoder.jp/users/khalludi}{khalludi} (Max. 768) $|$ CodeChef: \href{https://www.codechef.com/users/khalludi}{khalludi} (Max. 3*, 1763)
+\end{itemize}
+
+\end{rSection}
+
+\vspace{6pt}
+
+%----------------------------------------------------------------------------------------
+%\tPROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+\vspace{10pt}
+
+\begin{itemize}[label=$\bullet$, itemsep=4pt, parsep=0pt, leftmargin=15pt]
+    \item \textbf{Ayojon E-Commerce (Multi-Vendor Marketplace).} Full-stack multi-vendor marketplace for event products targeting Bangladesh. \href{https://github.com/khalludi03/Ayojon}{(GitHub)}
+    \begin{itemize}[label=$\circ$, itemsep=0pt, parsep=0pt, leftmargin=10pt]
+        \item Built vendor storefronts, product management with S3 uploads, hybrid cart sync, and multi-step checkout (bKash + COD) with role-based auth.
+        \item Tech: TypeScript, React 19, TanStack Router/Query, Tailwind CSS v4, Hono (Bun), oRPC, Drizzle ORM, PostgreSQL (Supabase), Amazon S3, better-auth.
+    \end{itemize}
+
+    \item \textbf{AI-Powered Support Ticket Processing Pipeline.} Queue-based backend for AI ticket triage and resolution with real-time status updates. \href{https://github.com/khalludi03/Ticket-Processing-Pipeline}{(GitHub)}
+    \begin{itemize}[label=$\circ$, itemsep=0pt, parsep=0pt, leftmargin=10pt]
+        \item Implemented a two-phase pipeline (triage $\rightarrow$ resolution) using SQS + DLQ, PostgreSQL state tracking, and WebSocket events for progress/finish notifications.
+        \item Added retry with exponential backoff, schema-validated AI outputs (Zod), fallback outputs for degraded AI, and structured logging with PII redaction (Pino); covered with unit + integration tests (Vitest).
+    \end{itemize}
+
+    \item \textbf{Hospital Management System (C++ File System).} Role-based hospital management system using .txt storage. \href{https://github.com/Tanjim605/Hospital_Management_System}{(GitHub)}
+    \begin{itemize}[label=$\circ$, itemsep=0pt, parsep=0pt, leftmargin=10pt]
+        \item Implemented hierarchical roles and file-based persistence; improved understanding of access control and file handling in C++.
+    \end{itemize}
+\end{itemize}
+
+\end{rSection}
+
+\vspace{6pt}
+
+%----------------------------------------------------------------------------------------
+%\tEXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXPERIENCE}
+\vspace{4pt}
+
+\begin{itemize}[label={}, leftmargin=0pt, itemsep=0pt, parsep=0pt]
+\rSubsection{Undergraduate Teaching Assistant}{Jan 2024 -- Jun 2024}{International Islamic University Chittagong}{Chittagong, Bangladesh}
+\vspace{1.5pt}
+\begin{itemize}[label=$\bullet$, itemsep=-1pt, parsep=0pt, leftmargin=15pt]
+    \item Led discussion sections for Competitive Programming; assisted students with problem-solving and evaluated lab performance.
+\end{itemize}
+\end{itemize}
+
+\end{rSection}
+
+\vspace{10pt}
+
+%----------------------------------------------------------------------------------------
+%\tEXTRACURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXTRACURRICULAR ACTIVITIES}
+\vspace{4pt}
+
+\begin{itemize}[label={}, leftmargin=0pt, itemsep=0pt, parsep=0pt]
+\rSubsection{IIUC Competitive Programming Society -- Trainer \& Mentor}{Jun 2023 -- Dec 2023}{}{}
+\vspace{1.5pt}
+\begin{itemize}[label=$\bullet$, itemsep=-1pt, parsep=0pt, leftmargin=15pt]
+    \item Arranged boot camps and contests, tracked members' performance, and mentored on problem-solving.
+\end{itemize}
+
+\rSubsection{IIUC Computer Club -- Assistant Competitive Programming Secretary}{Jun 2024 -- Dec 2024}{}{}
+\vspace{1.5pt}
+\begin{itemize}[label=$\bullet$, itemsep=-1pt, parsep=0pt, leftmargin=15pt]
+    \item Assisted in planning and executing programming contests and events; promoted contests through outreach and communication.
+\end{itemize}
+\end{itemize}
+
+\end{rSection}
+
+\vspace{10pt}
+
+%----------------------------------------------------------------------------------------
+%\tACHIEVEMENTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{ACHIEVEMENTS}
+\vspace{10pt}
+
+\begin{itemize}[label=$\bullet$, itemsep=4pt, parsep=0pt, leftmargin=15pt]
+    \item \textbf{ICPC:} Ranked \textbf{154th/2460} (Dhaka Site Preliminary 2024) $|$ Ranked \textbf{164th/\textasciitilde2500} (Dhaka Site Preliminary 2024)
+    \item \textbf{University Contests:} 10th (IIUC Intra University 2022) $|$ 11th (IIUC Intra University 2022 -- Junior) $|$ 15th (CUSS Presents IT Fiesta 2024) $|$ 23rd (15th IIUC Inter University 2023)
+    \item \textbf{Other:} National 8th (IEEE\_Xtreme 18.0) $|$ 15th (IIUC Intra University Autumn 2022 -- Male Junior) $|$ 14th (IIUC Intra University Autumn 2023)
+\end{itemize}
+
+\end{rSection}
+
+\end{document}
+
