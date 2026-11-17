@@ -93,22 +93,24 @@
 \vspace{10pt}
 
 \begin{itemize}[label=$\bullet$, itemsep=4pt, parsep=0pt, leftmargin=15pt]
-    \item \textbf{Ayojon E-Commerce (Multi-Vendor Marketplace).} Full-stack multi-vendor marketplace for event products targeting Bangladesh. \href{https://github.com/khalludi03/Ayojon}{(GitHub)}
+    \item \textbf{School Feeding Management System.} \href{https://github.com/khalludi03/School-Feeding-Management-System-}{(GitHub)}
+    \begin{itemize}[label=$\circ$, itemsep=0pt, parsep=0pt, leftmargin=10pt]
+        \item Built Admin/Field Staff workflows: delivery entry with chalan-photo uploads, zero-delivery confirmation, working-day calendars, per-cycle ration config, and Forms 4/7/10/12/13 with PDF/Excel exports.
+        \item Tech: PHP 8.3, Laravel 13, React 19 + TypeScript, Tailwind CSS v4, Radix UI, MySQL, Supabase S3; Dockerized with FrankenPHP/Caddy and deployed on Railway.
+    \end{itemize}
+
+    \item \textbf{Ayojon E-Commerce (Multi-Vendor Marketplace).} \href{https://github.com/khalludi03/Ayojon}{(GitHub)}
     \begin{itemize}[label=$\circ$, itemsep=0pt, parsep=0pt, leftmargin=10pt]
         \item Built vendor storefronts, product management with S3 uploads, hybrid cart sync, and multi-step checkout (bKash + COD) with role-based auth.
         \item Tech: TypeScript, React 19, TanStack Router/Query, Tailwind CSS v4, Hono (Bun), oRPC, Drizzle ORM, PostgreSQL (Supabase), Amazon S3, better-auth.
     \end{itemize}
 
-    \item \textbf{AI-Powered Support Ticket Processing Pipeline.} Queue-based backend for AI ticket triage and resolution with real-time status updates. \href{https://github.com/khalludi03/Ticket-Processing-Pipeline}{(GitHub)}
+    \item \textbf{AI-Powered Support Ticket Processing Pipeline.} \href{https://github.com/khalludi03/Ticket-Processing-Pipeline}{(GitHub)}
     \begin{itemize}[label=$\circ$, itemsep=0pt, parsep=0pt, leftmargin=10pt]
         \item Implemented a two-phase pipeline (triage $\rightarrow$ resolution) using SQS + DLQ, PostgreSQL state tracking, and WebSocket events for progress/finish notifications.
         \item Added retry with exponential backoff, schema-validated AI outputs (Zod), fallback outputs for degraded AI, and structured logging with PII redaction (Pino); covered with unit + integration tests (Vitest).
     \end{itemize}
 
-    \item \textbf{Hospital Management System (C++ File System).} Role-based hospital management system using .txt storage. \href{https://github.com/Tanjim605/Hospital_Management_System}{(GitHub)}
-    \begin{itemize}[label=$\circ$, itemsep=0pt, parsep=0pt, leftmargin=10pt]
-        \item Implemented hierarchical roles and file-based persistence; improved understanding of access control and file handling in C++.
-    \end{itemize}
 \end{itemize}
 
 \end{rSection}
